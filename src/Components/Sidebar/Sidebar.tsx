@@ -15,7 +15,7 @@ const Sidebar = () => {
 export default Sidebar;
 
 const Container = tw.div`
-    h-full
+    h-screen
     w-48
     bg-secondary
 `;

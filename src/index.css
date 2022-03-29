@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  /* html {
-    font-family: "Alice in Wonderland";
-    font-weight: normal;
-    font-style: normal;
-  } */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer components {
