@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* html {
+    font-family: "Alice in Wonderland";
+    font-weight: normal;
+    font-style: normal;
+  } */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .font-primary {
+    @apply font-['Martel'];
+  }
+  .font-secondary {
+    @apply font-['Alice_in_Wonderland'];
+  }
+  .text-primary {
+    @apply text-white;
+  }
+  .text-secondary {
+    @apply text-gray-400;
+  }
+  .bg-primary {
+    @apply bg-gray-800;
+  }
+  .bg-secondary {
+    @apply bg-gray-700;
+  }
+  .sidebar-padding {
+    @apply p-4;
+  }
+}
+
+@layer utilities {
 }
